@@ -1,1 +1,12 @@
 services:
+  db:
+    image: postgres:16-alpine
+    container_name: 69-s2-db
+    ports:
+      - 54321:5432
+    environments:
+      - POSTGRES_PASSWORD=korn@89
+      - POSTGRES_USER=kornnisa
+      - POSTGRES_DB=kornnisa
+      
+    
