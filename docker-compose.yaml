@@ -5,7 +5,7 @@ services:
     ports:
       - 54321:5432
     environment:
-      - POSTGRES_PASSWORD=korn@89
+      - POSTGRES_PASSWORD=test$1245
       - POSTGRES_USER=kornnisa
       - POSTGRES_DB=kornnisa
 
