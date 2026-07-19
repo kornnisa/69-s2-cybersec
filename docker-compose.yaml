@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=kornnisa
       - POSTGRES_DB=kornnisa
 
-  admin:
+  pgadmin:
     image: dpage/pgadmin4:latest
     container_name: 69-s2-admin
     ports:
