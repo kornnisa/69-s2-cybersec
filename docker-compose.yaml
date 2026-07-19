@@ -8,5 +8,14 @@ services:
       - POSTGRES_PASSWORD=korn@89
       - POSTGRES_USER=kornnisa
       - POSTGRES_DB=kornnisa
+
+  admin:
+    image: dpage/pgadmin4:latest
+    container_name: 69-s2-admin
+    ports:
+      - 8082:80
+    evironment:
+      - PGADMIN_DEFAULT_EMAIL=admin@test.com
+      - PGADMIN_DEFAULT_PASSWORD=test$1245
       
     
