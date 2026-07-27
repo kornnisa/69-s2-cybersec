@@ -15,7 +15,7 @@ services:
     ports:
       - 8082:80
     environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@test.com
-      - PGADMIN_DEFAULT_PASSWORD=test$1245
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAI}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
       
     
