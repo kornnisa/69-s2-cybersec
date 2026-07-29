@@ -8,8 +8,6 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_DB=${POSTGRES_DB}
-    volumes:
-      - ./data-postgres:/var/lib/postgresql/data
 
   admin:
     image: dpage/pgadmin4:latest
@@ -19,6 +17,5 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAI}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
-volumes:
-  data-postgres:     
+    
     
