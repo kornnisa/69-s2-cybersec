@@ -28,6 +28,7 @@ services:
     ports:
       - ${APP_POST}:1337
     environment:
+      - DATABASE_CLIENT=${DATABASE_CLIENT}
       - DATABASE_NAME=${DATABASE_NAME}
       - DATABASE_HOST=${DATABASE_HOST}
       - DATABASE_PORT=${DATABASE_PORT}
