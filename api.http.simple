@@ -10,6 +10,33 @@ Content-Type: application/json
     "rememberMe": false
 }
 
-## Regiter
+## Register
+POST http://localhost:9092/admin/register
+Content-Type: application/json
+
+{
+    "firstname": "",
+    "lastname": "",
+    "email": "",
+    "password": ""
+}
+
 ## Forgot Password
+POST http://localhost:9092/admin/forgot-password
+Content-Type: application/json
+
+{
+    "email": ""
+}
+
 ## Profile
+GET http://localhost:9092/admin/users/me
+Content-Type: application/json; charset=utf-8
+
+{
+    id: ,
+    firstname: "",
+    lastname: "", 
+    username: null, 
+    email: "",
+}
