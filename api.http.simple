@@ -33,7 +33,6 @@ Content-Type: application/json
 
 ### 1.4 Profile
 GET http://localhost:9092/admin/users/me
-Content-Type: application/json; charset=utf-8
 authorization: Bearer {token}
 
 
@@ -69,6 +68,5 @@ Content-Type: application/json
 
 ### 2.4 Profile
 GET http://localhost:9092/api/users/me
-Content-Type: application/json; charset=utf-8
 Authorization: Bearer {token}
 
